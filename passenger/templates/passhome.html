@@ -1,0 +1,57 @@
+
+{% extends 'navbar.html' %} 
+{% block content %}
+<style>
+    a{
+        font-size: xx-large;
+    }
+    h2{
+        color: rgb(190, 0, 0);
+        font-size: 50px;
+    }
+    .card-body{
+        margin-top: 50px;
+        background-color: rgb(254, 254, 254);
+        border-radius: 200px;
+    }
+ 
+</style>
+
+
+{% if messages %}
+    {% for i in messages %}
+        {% if i.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+            <div class="alert alert-success">
+            {{i}}
+            </div>
+        {%endif%}
+        {% if i.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+            <div class="alert alert-danger">
+            {{i}}
+            </div>
+        {%endif%}
+    {%endfor%}
+{%endif%}
+<div class="container">
+
+    <div class=" ">
+        <div class="card-body">
+            <h2 class="my-3 text-center">Welcome to SAFE DRIVE Bus Transportation for Bus Reservation</h2>
+        </div>
+        <div class="card-body">
+            <p class=" text-center text-dark">Safe drive bus transportation has an edge over the other online bus ticket booking
+                 platforms in India as we keep implementing new features keeping in mind the behaviour of our users and the common bus passenger.
+                  From Non-AC buses to Volvo AC buses and other luxury buses, you can book all types of bus tickets on Kerala bus transportation.
+
+                Free Cancellation
+                Instant Refunds
+                Easy & Quick Bus Booking
+                Exciting Cashback & Bus Offers
+                Best Price Assured</p>
+            <a class="nav-item nav-link text-success text-center" href="{% url 'findbus' %}" style="color: white;">Find Buses here</a>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends 'navbar.html'%}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #81b6be;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .imgabout{
+            width: 200px;
+            height: 200px;
+
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        About our services
+    </h1>
+
+    <div class="row">
+        <div class="column">
+            <div><img class="imgabout" src="/static/images/img.jpg" alt="About Us Image" />
+                <p>Buses may be used for scheduled bus transport, scheduled coach transport, school transport, private
+                    hire, or tourism; promotional buses may be used for political campaigns and others are privately
+                    operated for a wide range of purposes, including rock and pop band tour vehicles.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div><img class="imgabout" src="/static/images/seat.avif" alt="About Us Image" />
+                <p>When it comes to safety, the front seat of a bus is generally considered to be the best option. This
+                    is because the driver is in the front and they are more likely to be awake and alert. Additionally,
+                    passengers in the back seat may not be as aware of their surroundings as those in the front.</p>
+            </div>
+        </div>
+        <div class="column">
+            <div><img class="imgabout" src="/static/images/buss.avif" alt="About Us Image" />
+                <p>For decades, urban planners have looked to public transportation to facilitate improvements in
+                    community health and wellbeing. Public transit riders must walk from their front doors to the nearby
+                    transit stop and back, which increases physical activity to help address the modern obesity
+                    epidemic.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+{% endblock content %}
